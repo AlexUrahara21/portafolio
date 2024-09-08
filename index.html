@@ -7,26 +7,27 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     </head>
-    
     <body>
         <header>
             <nav>
                 <div class="logo">
                     <h1>Mi Portafolio  </h1>
                 </div>
-               
                 <div class="menu-icon" id="menu-icon">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <ul id="nav-list">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="#about">Sobre Mí</a></li>
                     <li><a href="#portfolio">Portafolio</a></li>
                     <li><a href="#services">Servicios</a></li>
-                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="paginas/educacion.html">Educación</a></li>
+                    <li><a href="paginas/habilidades.html">Habilidades</a></li>
                     <li><a href="paginas/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -95,309 +96,285 @@
                 </div>
             </div>
         </section>
+
+        
+
+
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portafolio</h2>
+                <div class="portfolio-grid">
+                    <a href="paginas/diseño_editorial.html"> <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/400" alt="Proyecto 1">
+                        <h3>Proyecto de Branding</h3>
+                        <p>Descripción del proyecto...</p>
+                    </div></a>
+                    <a href="paginas/diseño_editorial.html"><div class="portfolio-item">
+                        <img src="https://via.placeholder.com/400" alt="Proyecto 2">
+                        <h3>Diseño Editorial</h3>
+                        <p>Descripción del proyecto...</p>
+                    </div></a>
+                    <a href="paginas/diseño_editorial.html"><div class="portfolio-item">
+                        <img src="https://via.placeholder.com/400" alt="Proyecto 3">
+                        <h3>Diseño Web</h3>
+                        <p>Descripción del proyecto...</p>
+                    </div></a>
+                    <a href="paginas/diseño_editorial.html"><div class="portfolio-item">
+                        <img src="https://via.placeholder.com/400" alt="Proyecto 3">
+                        <h3>Personales</h3>
+                        <p>Descripción del proyecto...</p>
+                    </div></a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section id="services">
+            <div class="container">
+                <h2>Servicios</h2>
+                <div class="services-grid">
+                    <!-- Servicio 1 -->
+                    <div class="service-item">
+                        <i class="fas fa-palette"></i>
+                        <h3>Branding y Identidad Visual</h3>
+                        <p>Creación de logotipos, paletas de colores, tipografías y elementos visuales que representan la identidad de tu marca.</p>
+                        <button class="view-example-btn" onclick="openModal('modal1')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 2 -->
+                    <div class="service-item">
+                        <i class="fas fa-ad"></i>
+                        <h3>Diseño de Publicidad</h3>
+                        <p>Diseño de anuncios para medios impresos y digitales, incluyendo banners, folletos y posters que capturan la atención.</p>
+                        <button class="view-example-btn" onclick="openModal('modal2')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 3 -->
+                    <div class="service-item">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Diseño Web</h3>
+                        <p>Desarrollo de interfaces visuales para sitios web, asegurando una experiencia de usuario atractiva y funcional.</p>
+                        <button class="view-example-btn" onclick="openModal('modal3')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 4 -->
+                    <div class="service-item">
+                        <i class="fas fa-book"></i>
+                        <h3>Diseño Editorial</h3>
+                        <p>Maquetación y diseño de libros, revistas, informes, cuidando la tipografía y la disposición de los elementos.</p>
+                        <button class="view-example-btn" onclick="openModal('modal4')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 5 -->
+                    <div class="service-item">
+                        <i class="fas fa-box"></i>
+                        <h3>Diseño de Packaging</h3>
+                        <p>Creación de envases y empaques para productos, combinando estética y funcionalidad para destacar en el mercado.</p>
+                        <button class="view-example-btn" onclick="openModal('modal5')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 6 -->
+                    <div class="service-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Diseño de Materiales de Marketing</h3>
+                        <p>Desarrollo de folletos, tarjetas de presentación, catálogos, y otros materiales que apoyan las estrategias de marketing.</p>
+                        <button class="view-example-btn" onclick="openModal('modal6')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 7 -->
+                    <div class="service-item">
+                        <i class="fas fa-share-alt"></i>
+                        <h3>Diseño de Redes Sociales</h3>
+                        <p>Creación de gráficos y plantillas para publicaciones en redes sociales, optimizadas para varias plataformas.</p>
+                        <button class="view-example-btn" onclick="openModal('modal7')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 8 -->
+                    <div class="service-item">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Infografías</h3>
+                        <p>Creación de infografías que presenten información compleja de manera visualmente atractiva y fácil de entender.</p>
+                        <button class="view-example-btn" onclick="openModal('modal8')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 9 -->
+                    <div class="service-item">
+                        <i class="fas fa-map-signs"></i>
+                        <h3>Diseño de Señalización</h3>
+                        <p>Desarrollo de gráficos para la orientación en espacios físicos, incluyendo señalización interior y exterior.</p>
+                        <button class="view-example-btn" onclick="openModal('modal9')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 10 -->
+                    <div class="service-item">
+                        <i class="fas fa-print"></i>
+                        <h3>Impresos Corporativos</h3>
+                        <p>Diseño de papelería corporativa, como tarjetas de presentación, hojas membretadas, carpetas y más, reflejando la identidad de tu marca.</p>
+                        <button class="view-example-btn" onclick="openModal('modal10')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 11 -->
+                    <div class="service-item">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>Ilustración Digital</h3>
+                        <p>Creación de ilustraciones personalizadas para campañas, productos o branding, con un enfoque en detalle y creatividad.</p>
+                        <button class="view-example-btn" onclick="openModal('modal11')">Ver ejemplo</button>
+                    </div>
+        
+                    <!-- Servicio 12 -->
+                    <div class="service-item">
+                        <i class="fas fa-camera"></i>
+                        <h3>Fotografía y Edición</h3>
+                        <p>Servicios de fotografía profesional y edición, ideal para proyectos de marketing, productos o eventos corporativos.</p>
+                        <button class="view-example-btn" onclick="openModal('modal12')">Ver ejemplo</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modales -->
+            <!-- Modal 1 -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <img class="modal-image" id="modal1-img1" src="img/1.jpg" alt="Ejemplo de Diseño Gráfico">
+                    <img class="modal-image" id="modal1-img2" src="img/2.jpg" alt="Ejemplo de Diseño Gráfico" style="display: none;">
+                    <span class="prev" onclick="changeImage('modal1-img2', 'modal1-img1')">&#10094;</span>
+                    <span class="next" onclick="changeImage('modal1-img1', 'modal1-img2')">&#10095;</span>
+                    <p>Descripción del ejemplo de Diseño Gráfico.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 2 -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <img class="modal-image" id="modal2-img1" src="ruta/a/tu/imagen2-1.jpg" alt="Ejemplo de Diseño de Publicidad">
+                    <img class="modal-image" id="modal2-img2" src="ruta/a/tu/imagen2-2.jpg" alt="Ejemplo de Diseño de Publicidad" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal2-img1', 'modal2-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Diseño de Publicidad.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 3 -->
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <img class="modal-image" id="modal3-img1" src="ruta/a/tu/imagen3-1.jpg" alt="Ejemplo de Diseño Web">
+                    <img class="modal-image" id="modal3-img2" src="ruta/a/tu/imagen3-2.jpg" alt="Ejemplo de Diseño Web" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal3-img1', 'modal3-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Diseño Web.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 4 -->
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <img class="modal-image" id="modal4-img1" src="ruta/a/tu/imagen4-1.jpg" alt="Ejemplo de Diseño Editorial">
+                    <img class="modal-image" id="modal4-img2" src="ruta/a/tu/imagen4-2.jpg" alt="Ejemplo de Diseño Editorial" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal4-img1', 'modal4-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Diseño Editorial.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 5 -->
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal5')">&times;</span>
+                    <img class="modal-image" id="modal5-img1" src="ruta/a/tu/imagen5-1.jpg" alt="Ejemplo de Diseño de Packaging">
+                    <img class="modal-image" id="modal5-img2" src="ruta/a/tu/imagen5-2.jpg" alt="Ejemplo de Diseño de Packaging" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal5-img1', 'modal5-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Diseño de Packaging.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 6 -->
+            <div id="modal6" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal6')">&times;</span>
+                    <img class="modal-image" id="modal6-img1" src="ruta/a/tu/imagen6-1.jpg" alt="Ejemplo de Diseño de Materiales de Marketing">
+                    <img class="modal-image" id="modal6-img2" src="ruta/a/tu/imagen6-2.jpg" alt="Ejemplo de Diseño de Materiales de Marketing" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal6-img1', 'modal6-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Diseño de Materiales de Marketing.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 7 -->
+            <div id="modal7" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal7')">&times;</span>
+                    <img class="modal-image" id="modal7-img1" src="ruta/a/tu/imagen7-1.jpg" alt="Ejemplo de Diseño de Redes Sociales">
+                    <img class="modal-image" id="modal7-img2" src="ruta/a/tu/imagen7-2.jpg" alt="Ejemplo de Diseño de Redes Sociales" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal7-img1', 'modal7-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Diseño de Redes Sociales.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 8 -->
+            <div id="modal8" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal8')">&times;</span>
+                    <img class="modal-image" id="modal8-img1" src="ruta/a/tu/imagen8-1.jpg" alt="Ejemplo de Infografías">
+                    <img class="modal-image" id="modal8-img2" src="ruta/a/tu/imagen8-2.jpg" alt="Ejemplo de Infografías" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal8-img1', 'modal8-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Infografías.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 9 -->
+            <div id="modal9" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal9')">&times;</span>
+                    <img class="modal-image" id="modal9-img1" src="ruta/a/tu/imagen9-1.jpg" alt="Ejemplo de Diseño de Señalización">
+                    <img class="modal-image" id="modal9-img2" src="ruta/a/tu/imagen9-2.jpg" alt="Ejemplo de Diseño de Señalización" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal9-img1', 'modal9-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Diseño de Señalización.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 10 -->
+            <div id="modal10" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal10')">&times;</span>
+                    <img class="modal-image" id="modal10-img1" src="ruta/a/tu/imagen10-1.jpg" alt="Ejemplo de Impresos Corporativos">
+                    <img class="modal-image" id="modal10-img2" src="ruta/a/tu/imagen10-2.jpg" alt="Ejemplo de Impresos Corporativos" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal10-img1', 'modal10-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Impresos Corporativos.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 11 -->
+            <div id="modal11" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal11')">&times;</span>
+                    <img class="modal-image" id="modal11-img1" src="ruta/a/tu/imagen11-1.jpg" alt="Ejemplo de Ilustración Digital">
+                    <img class="modal-image" id="modal11-img2" src="ruta/a/tu/imagen11-2.jpg" alt="Ejemplo de Ilustración Digital" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal11-img1', 'modal11-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Ilustración Digital.</p>
+                </div>
+            </div>
+        
+            <!-- Modal 12 -->
+            <div id="modal12" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal12')">&times;</span>
+                    <img class="modal-image" id="modal12-img1" src="ruta/a/tu/imagen12-1.jpg" alt="Ejemplo de Fotografía y Edición">
+                    <img class="modal-image" id="modal12-img2" src="ruta/a/tu/imagen12-2.jpg" alt="Ejemplo de Fotografía y Edición" style="display: none;">
+                    <button class="modal-nav-btn" onclick="showImage('modal12-img1', 'modal12-img2')">Siguiente imagen</button>
+                    <p>Descripción del ejemplo de Fotografía y Edición.</p>
+                </div>
+            </div>
+        </section>
         
         
     
-    
-    
-    
-    
-    
-    
-    
-    
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portafolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400" alt="Proyecto 1">
-                    <h3>Proyecto de Branding</h3>
-                    <p>Descripción del proyecto...</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400" alt="Proyecto 2">
-                    <h3>Diseño Editorial</h3>
-                    <p>Descripción del proyecto...</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400" alt="Proyecto 3">
-                    <h3>Diseño Web</h3>
-                    <p>Descripción del proyecto...</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400" alt="Proyecto 3">
-                    <h3>Personales</h3>
-                    <p>Descripción del proyecto...</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <h2>Servicios</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <i class="fas fa-palette"></i>
-                    <h3>Branding y Identidad Visual</h3>
-                    <p>Creación de logotipos, paletas de colores, tipografías y elementos visuales que representan la identidad de tu marca.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-ad"></i>
-                    <h3>Diseño de Publicidad</h3>
-                    <p>Diseño de anuncios para medios impresos y digitales, incluyendo banners, folletos y posters que capturan la atención.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-desktop"></i>
-                    <h3>Diseño Web</h3>
-                    <p>Desarrollo de interfaces visuales para sitios web, asegurando una experiencia de usuario atractiva y funcional.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-book"></i>
-                    <h3>Diseño Editorial</h3>
-                    <p>Maquetación y diseño de libros, revistas, informes, cuidando la tipografía y la disposición de los elementos.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-box"></i>
-                    <h3>Diseño de Packaging</h3>
-                    <p>Creación de envases y empaques para productos, combinando estética y funcionalidad para destacar en el mercado.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Diseño de Materiales de Marketing</h3>
-                    <p>Desarrollo de folletos, tarjetas de presentación, catálogos, y otros materiales que apoyan las estrategias de marketing.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-share-alt"></i>
-                    <h3>Diseño de Redes Sociales</h3>
-                    <p>Creación de gráficos y plantillas para publicaciones en redes sociales, optimizadas para varias plataformas.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-chart-pie"></i>
-                    <h3>Infografías</h3>
-                    <p>Creación de infografías que presenten información compleja de manera visualmente atractiva y fácil de entender.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-map-signs"></i>
-                    <h3>Diseño de Señalización</h3>
-                    <p>Desarrollo de gráficos para la orientación en espacios físicos, incluyendo señalización interior y exterior.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-print"></i>
-                    <h3>Impresos Corporativos</h3>
-                    <p>Diseño de papelería corporativa, como tarjetas de presentación, hojas membretadas, carpetas y más, reflejando la identidad de tu marca.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-pencil-ruler"></i>
-                    <h3>Ilustración Digital</h3>
-                    <p>Creación de ilustraciones personalizadas para campañas, productos o branding, con un enfoque en detalle y creatividad.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-camera"></i>
-                    <h3>Fotografía y Edición</h3>
-                    <p>Servicios de fotografía profesional y edición, ideal para proyectos de marketing, productos o eventos corporativos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-
-    <section id="education">
-        <div class="container">
-            <h2>Educación</h2>
-            <div class="tabs">
-                <button class="tab-button active" data-tab="tab1">Nivel Preparatoria</button>
-                <button class="tab-button" data-tab="tab2">Nivel Superior</button>
-                <button class="tab-button" data-tab="tab3">Nivel Técnico</button>
-                <button class="tab-button" data-tab="tab4">Certificaciones</button>
-            </div>
-            <div class="tab-content">
-                <div id="tab1" class="tab-pane active">
-                    <div class="tab-pane-content">
-                        <div class="tab-pane-left">
-                            <h3>Preparatoria</h3>
-                            <p>Merida, Yucatán</p>
-                            <p><strong>De:</strong> 2010 <strong>A:</strong> 2012</p>
-                        </div>
-                        <div class="tab-pane-middle">
-                            <h4>Escuela de Bachilleres XYZ</h4>
-                            <p>Aprendí conceptos fundamentales en matemáticas, ciencias, y humanidades.</p>
-                        </div>
-                        <div class="tab-pane-right">
-                            <img src="https://via.placeholder.com/600x250" alt="Escuela de Bachilleres XYZ" class="school-photo">
-                        </div>
-                    </div>
-                </div>
-                <div id="tab2" class="tab-pane">
-                    <div class="tab-pane-content">
-                        <div class="tab-pane-left">
-                            <h3>Licenciatura</h3>
-                            <p>Merida, Yucatán</p>
-                            <p><strong>De:</strong> 2013 <strong>A:</strong> 2017</p>
-                        </div>
-                        <div class="tab-pane-middle">
-                            <h4>Universidad ABC</h4>
-                            <p>Desarrollé habilidades avanzadas en diseño gráfico, branding y diseño web.</p>
-                        </div>
-                        <div class="tab-pane-right">
-                            <img src="https://via.placeholder.com/600x250" alt="Universidad ABC" class="school-photo">
-                        </div>
-                    </div>
-                </div>
-                <div id="tab3" class="tab-pane">
-                    <div class="tab-pane-content">
-                        <div class="tab-pane-left">
-                            <h3>Técnico</h3>
-                            <p>Merida, Yucatán</p>
-                            <p><strong>De:</strong> 2018 <strong>A:</strong> 2019</p>
-                        </div>
-                        <div class="tab-pane-middle">
-                            <h4>Instituto Técnico 123</h4>
-                            <p>Me especialicé en técnicas avanzadas de diseño gráfico y edición de imágenes.</p>
-                        </div>
-                        <div class="tab-pane-right">
-                            <img src="https://via.placeholder.com/600x250" alt="Instituto Técnico 123" class="school-photo">
-                        </div>
-                    </div>
-                </div>
-                <div id="tab4" class="tab-pane">
-                    <div class="tab-pane-content">
-                        <div class="tab-pane-left">
-                            <h3>Certificaciones</h3>
-                            <p>Merida, Yucatán</p>
-                            <p><strong>De:</strong> 2020 <strong>A:</strong> 2021</p>
-                        </div>
-                        <div class="tab-pane-middle">
-                            <h4>Certificación en Diseño UX/UI</h4>
-                            <p>Aprendí a diseñar interfaces de usuario efectivas y amigables.</p>
-                        </div>
-                        <div class="tab-pane-right">
-                            <img src="https://via.placeholder.com/600x250" alt="Certificación en Diseño UX/UI" class="school-photo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabButtons = document.querySelectorAll('.tab-button');
-            const tabPanes = document.querySelectorAll('.tab-pane');
-    
-            tabButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const tabId = this.getAttribute('data-tab');
-    
-                    // Remove active class from all buttons and panes
-                    tabButtons.forEach(btn => btn.classList.remove('active'));
-                    tabPanes.forEach(pane => pane.classList.remove('active'));
-    
-                    // Add active class to clicked button and corresponding pane
-                    this.classList.add('active');
-                    document.getElementById(tabId).classList.add('active');
-                });
-            });
-        });
-    </script>
-    
-    
-    
-    
-    
-    
-    
-
-
-    <section id="skills">
-        <div class="skills-container">
-            <h2>Habilidades</h2>
-            <div class="skill-bars">
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Photoshop</span>
-                        <span class="skill-percent">80%</span>
-                    </div>
-                    <div class="skill-progress" data-progress="80"></div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Illustrator</span>
-                        <span class="skill-percent">97%</span>
-                    </div>
-                    <div class="skill-progress" data-progress="97"></div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">InDesign</span>
-                        <span class="skill-percent">70%</span>
-                    </div>
-                    <div class="skill-progress" data-progress="70"></div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Premiere</span>
-                        <span class="skill-percent">40%</span>
-                    </div>
-                    <div class="skill-progress" data-progress="40"></div>
-                </div>
-                <!-- Add more skill bars as needed --> <br>
-            </div>
-            <h2>Habilidades</h2>
-            <div class="skill-bars">
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Photoshop</span>
-                        <span class="skill-percent">80%</span>
-                    </div>
-                    <div class="skill-progress" data-progress="80"></div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Illustrator</span>
-                        <span class="skill-percent">97%</span>
-                    </div>
-                    <div class="skill-progress" data-progress="97"></div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">InDesign</span>
-                        <span class="skill-percent">70%</span>
-                    </div>
-                    <div class="skill-progress" data-progress="70"></div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span class="skill-name">Premiere</span>
-                        <span class="skill-percent">40%</span>
-                    </div>
-                    <div class="skill-progress" data-progress="40"></div>
-                </div>
-                <!-- Add more skill bars as needed -->
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
         
-    
-
-
-
-
 
 
     <footer>
@@ -412,13 +389,11 @@
                 <a href="https://blogger.com/yourprofile" target="_blank" aria-label="Blogger"><i class="fab fa-blogger"></i></a>
                 <a href="https://yourwebsite.com" target="_blank" aria-label="Sitio Web"><i class="fas fa-globe"></i></a>
                 <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://tiktok.com/@yourprofile" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
     </footer>
-    
-
+</body>
+</html>
     <script src="script.js"></script>
 </body>
 </html>
