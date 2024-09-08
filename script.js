@@ -10,7 +10,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Mostrar el botón de regreso al inicio cuando se hace scroll hacia abajo
 const scrollBtn = document.createElement('button');
-scrollBtn.innerHTML = '↑';
 scrollBtn.id = 'scrollToTopBtn';
 document.body.appendChild(scrollBtn);
 
@@ -29,6 +28,7 @@ scrollBtn.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
 
 
 // Seleccionar el ícono del menú y la lista de navegación
@@ -51,12 +51,16 @@ function updateTime() {
     let minutes = now.getMinutes();
     let seconds = now.getSeconds();
 
-    // Formateando minutos y segundos para que siempre sean dos dígitos
+    // Determinar el período AM/PM
+    const amPm = hours >= 12 ? 'PM' : 'AM';
+
+    // Convertir la hora al formato de 12 horas
+    hours = hours % 12 || 12; // El formato de 12 horas convierte 0 a 12
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
-    // Mostrando la hora en el formato de 24 horas
-    timeElement.textContent = `Mérida, Yucatán: ${hours}:${minutes}:${seconds}`;
+    // Mostrando la hora en el formato de 12 horas
+    timeElement.textContent = `Mérida, Yucatán: ${hours}:${minutes}:${seconds} ${amPm}`;
     
     // Aplicando el efecto de desvanecimiento
     timeElement.classList.add('fade');
@@ -70,6 +74,7 @@ setInterval(updateTime, 1000);
 
 // Llamar a la función inmediatamente para mostrar la hora al cargar la página
 updateTime();
+
 
 
 
@@ -106,19 +111,37 @@ nextButton.addEventListener('click', () => {
 
 
 
+// Función para abrir el modal
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+    document.body.style.overflow = "hidden"; // Evita el desplazamiento de fondo
+}
 
+// Función para cerrar el modal
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+    document.body.style.overflow = "auto"; // Permite el desplazamiento de fondo
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-    const progressFills = document.querySelectorAll('.progress-fill');
-    
-    progressFills.forEach(fill => {
-        const width = fill.style.width;
-        fill.style.width = '0';
-        setTimeout(() => {
-            fill.style.width = width;
-        }, 100);
-    });
-});
+// Función para mostrar la siguiente imagen en el modal
+function showImage(currentImageId, nextImageId) {
+    document.getElementById(currentImageId).style.display = "none";
+    document.getElementById(nextImageId).style.display = "block";
+}
+
+// Cerrar el modal si se hace clic fuera del contenido
+window.onclick = function(event) {
+    if (event.target.className === 'modal') {
+        event.target.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+}
+// Función para cambiar entre las imágenes
+function changeImage(currentImageId, nextImageId) {
+    document.getElementById(currentImageId).style.display = "none";
+    document.getElementById(nextImageId).style.display = "block";
+}
+
 
 
 
